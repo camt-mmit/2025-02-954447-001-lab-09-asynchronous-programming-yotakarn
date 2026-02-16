@@ -8,8 +8,9 @@ describe('ProfileViewPage', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProfileViewPage],
-    }).compileComponents();
+      imports: [ProfileViewPage]
+    })
+    .compileComponents();
 
     fixture = TestBed.createComponent(ProfileViewPage);
     component = fixture.componentInstance;

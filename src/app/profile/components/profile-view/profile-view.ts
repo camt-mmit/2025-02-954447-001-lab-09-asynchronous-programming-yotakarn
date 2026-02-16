@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
+import { Profile } from '../../types';
 
 @Component({
   selector: 'app-profile-view',
@@ -8,5 +9,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProfileView {
+  readonly data = input.required<Profile>();
 
+  protected friends = computed(() => this.data().friends.join(', '));
 }

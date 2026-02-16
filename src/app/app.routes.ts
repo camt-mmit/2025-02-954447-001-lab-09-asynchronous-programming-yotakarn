@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'profile', pathMatch: 'full' },
+    { path: '', redirectTo: 'profile', pathMatch: 'full' },
 
-  { path: 'profile', loadChildren: () => import('./profile/routes') },
-  { path: 'assignment', loadChildren: () => import('./assignment/routes') },
+    { path: 'profile', loadChildren: () => import('./profile/routes') },
+    { path: 'assignment', loadChildren: () => import('./assignment/routes') },
 ];

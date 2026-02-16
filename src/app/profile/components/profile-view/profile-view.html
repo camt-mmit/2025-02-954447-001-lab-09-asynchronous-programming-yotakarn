@@ -1,1 +1,24 @@
-<p>profile-view works!</p>
+<dl class="_main-data">
+    <dt><b>Student ID</b></dt>
+    <dd>
+        <span class="app-cl-code">{{ data().studentId }}</span>
+    </dd>
+    <br>
+
+    <dt><b>Fullname</b></dt>
+    <dd>{{ data().firstname }} {{ data().lastname }}</dd>
+    <br>
+
+    <dt><b>Age</b></dt>
+    <dd>
+        <span class="app-cl-number">{{ data().age }}</span>
+    </dd>
+    <br>
+
+    <dt><b>Autobiography</b></dt>
+    <dd class="_autobiography">{{ data().autobiography }}</dd>
+    <br>
+
+    <dt><b>Friends</b></dt>
+    <dd>{{ friends() }}</dd>
+</dl>

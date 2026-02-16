@@ -8,8 +8,9 @@ describe('ProfileFormPage', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProfileFormPage],
-    }).compileComponents();
+      imports: [ProfileFormPage]
+    })
+    .compileComponents();
 
     fixture = TestBed.createComponent(ProfileFormPage);
     component = fixture.componentInstance;

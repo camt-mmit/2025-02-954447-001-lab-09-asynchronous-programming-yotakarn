@@ -8,8 +8,9 @@ describe('ProfileRoot', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProfileRoot],
-    }).compileComponents();
+      imports: [ProfileRoot]
+    })
+    .compileComponents();
 
     fixture = TestBed.createComponent(ProfileRoot);
     component = fixture.componentInstance;
